@@ -11,7 +11,7 @@
     v-model:show="show"
     :options="optionsComponent"
   >
-    <context-menu-item label="Simple item" @click="alertContextMenuItemClicked('Item1')" />
+    <context-menu-item label="Simple item" :checked="true"  @click="alertContextMenuItemClicked('Item1')" />
     <context-menu-item label="Item with a icon" icon="icon-reload-1" @click="alertContextMenuItemClicked('Item2')" />
     <context-menu-item label="Test item dynamic show and hide" :clickClose="false" @click="showItem=!showItem" />
     <context-menu-item v-if="showItem" label="Click the item above to show/hide me" />

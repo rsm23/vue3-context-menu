@@ -16,7 +16,7 @@
 
   //Shadow
   --mx-menu-shadow-color: rgba(0, 0, 0, 0.1);
-  --mx-menu-backgroud-radius: 10px;
+  --mx-menu-backgroud-radius: 7px;
 
   //Shortcut badge
   --mx-menu-shortcut-backgroud: #ebebeb;
@@ -39,13 +39,14 @@
 
 //Base hosts
 .mx-context-menu {
+  
   pointer-events: all;
   display: inline-block;
   overflow: visible;
   position: absolute;
   background-color: var(--mx-menu-backgroud);
   border-radius: var(--mx-menu-backgroud-radius);
-  padding: 12px 0;
+  padding: 10px 0;
   box-shadow: 0px 10px 40px 10px var(--mx-menu-shadow-color);
   opacity: 1;
   transition: opacity 0.2s ease-in-out;
@@ -114,7 +115,7 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
-  padding: 6px 15px;
+  padding: 10px 15px;
   user-select: none;
   overflow: visible;
   white-space: nowrap;
